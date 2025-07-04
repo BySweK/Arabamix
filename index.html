@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Arabamix</title>
+    <meta
+      name="description"
+      content="İstediğiniz fiyatta, istediğiniz aracı gönül rahatlığıyla elde edebilirsiniz. Tüm bunlar bir tık uzağınızda. Uygun fiyata rakiplerinden kendini ayıran firmamıza holgeldiniz."
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
+      crossorigin="anonymous"
+    />
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      #bilgi {
+        position: relative;
+        left: 47%;
+      }
+
+      .carousel-caption {
+        top: 60%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+      }
+
+      .container {
+        width: 100vw;
+        margin: 0;
+        padding: 0;
+      }
+
+      .uzak-gorsel {
+        transform: scale(0.9); /* 1'den küçük değer uzaklaştırır */
+        transform-origin: center;
+      }
+
+      .full-width-img {
+        width: 100vw;
+        height: auto;
+        display: block;
+      }
+
+      html,
+      body {
+        width: 100%;
+        overflow-x: hidden; /* Yatay taşmayı engeller */
+      }
+
+      .ana-gorsel {
+        width: 100%;
+        height: auto;
+        display: block;
+      }
+
+      .ilkbolum:hover {
+        background-color: crimson;
+      }
+      .ikincibolum:hover {
+        background-color: crimson;
+      }
+      .ucuncubolum:hover {
+        background-color: crimson;
+      }
+
+      .navbar-link:hover {
+        background-color: black;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-sm bg-danger navbar-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand ms-3" href="#">Arabamix</a>
+        <ul class="navbar nav me-5">
+          <li class="nav-item">
+            <a
+              style="text-decoration: none"
+              class="navbar-link mx-4 text-white"
+              href="#"
+              >AnaSayfa</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              style="text-decoration: none"
+              class="navbar-link mx-4 text-white"
+              href="satilik.html"
+              >Satılık Araçlar</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              style="text-decoration: none"
+              class="navbar-link mx-4"
+              href="kiralik.html"
+              >Kiralık Araçlar</a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="container">
+      <div
+        style="width: 100vw; margin: 0; padding: 0"
+        class="carousel slide"
+        id="slider1"
+      >
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="carousel-caption">
+              <h3 class="carousel-title mb-5">Uygun Fiyat</h3>
+              <h4>Uygun fiyatlı, yüksek performans araçlar !</h4>
+            </div>
+            <img
+              src="img/araba1.jpg"
+              class="full-width-image ana-gorsel"
+              style="width: 100%"
+              alt=""
+            />
+          </div>
+          <div class="carousel-item">
+            <div class="carousel-caption">
+              <h3 class="carousel-title mb-5">Uzun Ömür Garantisi</h3>
+              <h4>Firmamızdan temin edilen araçlar için şüpheye gerek yok !</h4>
+            </div>
+            <img
+              src="img/araba2.jpg"
+              class="full-width-image ana-gorsel"
+              alt=""
+              style="background-position: bottom"
+            />
+          </div>
+          <div class="carousel-item">
+            <div class="carousel-caption">
+              <h3 class="carousel-title mb-5">İlk araca %10 uygun fiyat</h3>
+              <h4>
+                Eğer firmamızdan aldığınız ilk aracınız ise %10 cebinizde kalsın
+                !
+              </h4>
+            </div>
+            <img
+              src="img/araba3.jpg"
+              class="full-width-image ana-gorsel"
+              alt=""
+            />
+          </div>
+          <a href="#slider1" class="carousel-control-prev" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+          </a>
+          <a href="#slider1" class="carousel-control-next" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer w-100">
+      <h5 id="bilgi">Genel Bilgiler</h5>
+      <br />
+
+      <div class="ilkbolum">
+        <h6 id="h61" class="ms-2">Arabamix nedir ?</h6>
+        <p class="ms-2">
+          Arabamix, ihtiyaçlar doğrultusunda kullanıcı iyiliğini düşünen,
+          yaptığı işlerle rekabeti yükselten, Türkiye'de önde gelen girişimci
+          bir firmadır
+        </p>
+      </div>
+
+      <div class="ikincibolum">
+        <h6 class="ms-2">Ne tür hizmetleriniz var ?</h6>
+        <p class="ms-2">
+          Tamamen kullanıcının ihtiyacına göre hizmet yapıyoruz. Kiralık ve
+          satılık seçeneklerimiz mevcuttur.
+        </p>
+      </div>
+
+      <div class="ucuncubolum">
+        <h6 class="ms-2">
+          Firma sahibi kimdir, hangi grup tarafından yönetiliyor ?
+        </h6>
+        <p class="ms-2">
+          Firmamızın sahibi Yükselen Group yöneticisi Yüksel Yıldıraydır.
+        </p>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

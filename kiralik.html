@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Arabamix</title>
+    <meta
+      name="description"
+      content="İstediğiniz fiyatta, istediğiniz aracı gönül rahatlığıyla elde edebilirsiniz. Tüm bunlar bir tık uzağınızda. Uygun fiyata rakiplerinden kendini ayıran firmamıza holgeldiniz."
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
+      crossorigin="anonymous"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.13.1/font/bootstrap-icons.min.css"
+      integrity="sha512-t7Few9xlddEmgd3oKZQahkNI4dS6l80+eGEzFQiqtyVYdvcSG2D3Iub77R20BdotfRPA9caaRkg1tyaJiPmO0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      .card {
+        float: left;
+      }
+
+      #kategori {
+        border-style: solid;
+        width: 250px;
+        height: 200px;
+      }
+
+      #bilgi {
+        position: relative;
+        left: 47%;
+      }
+
+      .carousel-caption {
+        top: 60%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+      }
+
+      .container {
+        width: 100vw;
+        margin: 0;
+        padding: 0;
+      }
+
+      .uzak-gorsel {
+        transform: scale(0.9); /* 1'den küçük değer uzaklaştırır */
+        transform-origin: center;
+      }
+
+      .full-width-img {
+        width: 100vw;
+        height: auto;
+        display: block;
+      }
+
+      html,
+      body {
+        width: 100%;
+        overflow-x: hidden; /* Yatay taşmayı engeller */
+      }
+
+      .ana-gorsel {
+        width: 100%;
+        height: auto;
+        display: block;
+      }
+
+      .icerik {
+        position: relative;
+        left: 650px;
+      }
+
+      .ilkbolum:hover {
+        background-color: crimson;
+      }
+      .ikincibolum:hover {
+        background-color: crimson;
+      }
+      .ucuncubolum:hover {
+        background-color: crimson;
+      }
+
+      .navbar-link:hover {
+        background-color: black;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-sm bg-danger navbar-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand ms-3" href="#">Arabamix</a>
+        <ul class="navbar nav me-5">
+          <li class="nav-item">
+            <a
+              style="text-decoration: none"
+              class="navbar-link mx-4 text-white"
+              href="index.html"
+              >AnaSayfa</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              style="text-decoration: none"
+              class="navbar-link mx-4 text-white"
+              href="satilik.html"
+              >Satılık Araçlar</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              style="text-decoration: none"
+              class="navbar-link mx-4 text-white"
+              href="#"
+              >Kiralık Araçlar</a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <h5 style="text-align: center" class="mt-5">
+      İstediğiniz araca ait bilgileri yazarak arama yapabilirsiniz.
+    </h5>
+    <div id="aramacubugu" class="container my-5">
+      <div class="icerik">
+        <input type="text" placeholder="Ford Focus" />
+        <button class="btn btn-danger">
+          <span class="bi bi-search"></span>
+        </button>
+      </div>
+    </div>
+
+    <div class="bolumler">
+      <div style="width: 200px" id="otomobil" class="card ms-5">
+        <div class="card-header">
+          <h5 class="card-title text-center">Otomobiller</h5>
+          <img class="w-100" src="img/araba1.jpg" alt="" />
+        </div>
+        <div class="card-body">
+          <p class="text-center">2000'den fazla ilan</p>
+          <button class="btn btn-danger ms-5">İncele</button>
+        </div>
+      </div>
+      <div style="width: 200px" id="otomobil" class="card ms-5">
+        <div class="card-header">
+          <h5 class="card-title text-center">Motosiklet</h5>
+          <img class="w-100" src="img/motor2.jpg" alt="" />
+        </div>
+        <div class="card-body">
+          <p class="text-center">1000'den fazla ilan</p>
+          <button class="btn btn-danger ms-5">İncele</button>
+        </div>
+      </div>
+      <div style="width: 200px" id="otomobil" class="card ms-5">
+        <div class="card-header">
+          <h5 class="card-title text-center">Deniz Araçları</h5>
+          <img class="w-100" src="img/deniz.jpg" alt="" />
+        </div>
+        <div class="card-body">
+          <p class="text-center">300'den fazla ilan</p>
+          <button class="btn btn-danger ms-5">İncele</button>
+        </div>
+      </div>
+      <div style="width: 200px" id="otomobil" class="card ms-5">
+        <div class="card-header">
+          <h5 class="card-title text-center">Hava Araçları</h5>
+          <img class="w-100" src="img/hava1.jpg" alt="" />
+        </div>
+        <div class="card-body">
+          <p class="text-center">50'den fazla ilan</p>
+          <button class="btn btn-danger ms-5">İncele</button>
+        </div>
+      </div>
+      <div style="width: 200px" id="otomobil" class="card ms-5">
+        <div class="card-header">
+          <h5 class="card-title text-center">İş Araçları</h5>
+          <img class="w-100" src="img/işaraç.jpg" alt="" />
+        </div>
+        <div class="card-body">
+          <p class="text-center">50'den fazla ilan</p>
+          <button class="btn btn-danger ms-5">İncele</button>
+        </div>
+      </div>
+      <div style="width: 200px" id="otomobil" class="card ms-5">
+        <div class="card-header">
+          <h5 class="card-title text-center">Takas Araçları</h5>
+          <img class="w-100" src="img/takas.jpg" alt="" />
+        </div>
+        <div class="card-body">
+          <p class="text-center">50'den fazla ilan</p>
+          <button class="btn btn-danger ms-5">İncele</button>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
