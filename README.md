@@ -21,3 +21,8 @@ Currently, the project is **still under development** and will be updated regula
 ## 📌 Project Status
 
 🛠️ In Progress — Features and design will be improved over time.
+
+## 📸 Ekran Görüntüsü
+
+![Proje Görünümü](GithubProjeSS.png)
+![Proje Görünümü](GithubProjeSS2.png)
