@@ -6,7 +6,7 @@ The goal of this project is to help me improve my **Front-End development skills
 > ⚠️ This project is for learning purposes only.  
 > All people, listings, and content are fictional.
 
-Currently, the project is **still under development** and will be updated regularly by me.
+
 
 ---
 
@@ -20,7 +20,7 @@ Currently, the project is **still under development** and will be updated regula
 
 ## 📌 Project Status
 
-🛠️ In Progress — Features and design will be improved over time.
+🛠️ It is over. I changed my field.
 
 ## 📸 Ekran Görüntüsü
 
